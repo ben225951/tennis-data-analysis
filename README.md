@@ -39,7 +39,7 @@ This project builds a basic data pipeline for historical tennis match data from 
 
 ## 📁 Project Structure
 
-'''
+```
 
 tennis-data-engineering/
 ├── data/
@@ -54,7 +54,7 @@ tennis-data-engineering/
 ├── README.md # Project overview
 ├── requirements.txt # List of Python dependencies
 
-'''
+```
 
 ## 🚀 Getting Started
 
