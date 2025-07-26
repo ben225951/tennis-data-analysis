@@ -10,7 +10,7 @@ This project builds a data pipeline for tennis match data using open-source tool
 - [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
 - [How to Use](#how-to-use)
-- [Improvements](#improvements)
+- [Future Improvements](#future-improvements)
 
 
 ## 🧠 Project Overview
@@ -19,40 +19,47 @@ This project builds a basic data pipeline for historical tennis match data from 
 - Data ingestion from GitHub
 - Cleaning and transformation
 - Storage in local CSV format
-- Simple stats like win/loss counts or surface performance
+
 
 
 ## ✨ Features
+
 - 📥 Download ATP tennis match data from the web
 - 🧹 Clean and transform raw data
 - 🗃️ Save processed data for analysis
-- 📊 Track player win/loss performance
+
 
 
 ## 🛠 Technologies Used
 
 - Python
 - Pandas
-- Requests
-- PostgreSQL (optional)
-- Streamlit (for future dashboard)
 - Git & GitHub
 
 
-## Project Structure
+## 📁 Project Structure
+
+'''
 
 tennis-data-engineering/
 ├── data/
-│ ├── raw/ # Raw CSVs
-│ └── processed/ # Cleaned CSVs
-├── notebooks/ # Jupyter Notebooks (for EDA)
+│ ├── raw/ # Raw tennis match data (downloaded)
+│ └── processed/ # Cleaned and transformed data
+├── notebooks/ # Jupyter notebooks for exploration
 ├── src/
-│ ├── ingestion.py # Downloads raw data
-│ ├── transformation.py # Cleans/transforms data
+│ ├── ingestion.py # Downloads data from source
+│ ├── transformation.py # Cleans and formats data
 │ └── utils.py # Helper functions
-├── .gitignore
-├── README.md
-├── requirements.txt
+├── .gitignore # Ignore untracked files
+├── README.md # Project overview
+├── requirements.txt # List of Python dependencies
+
+'''
+
+## 🚀 Getting Started
 
 
-## Getting Started
+## 🧪 How to Use
+
+
+## 🔮 Future Improvements
