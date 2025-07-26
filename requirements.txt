@@ -1,0 +1,6 @@
+- Tells Python/pip what to install into your environment.
+- Does not automatically import those libraries in your code.
+
+os
+requests
+pandas
