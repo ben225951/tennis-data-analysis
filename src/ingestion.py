@@ -26,16 +26,15 @@ os.makedirs(raw_data_dir, exist_ok=True)
 current_year=2024
 
 
-# downloads and saves csv based on category
-# provides flexibility to save files in base folder or subfolders
-def download_file(filename, subfolder=""):
+# downloads and saves csv 
+def download_file(filename):
 
     # completes url to download csv from
     url = base_url + filename
 
     # constructs a full file path
     # avoids manual string concatenation, cross platform issues
-    path = os.path.join(raw_data_dir, subfolder, filename)
+    path = os.path.join(raw_data_dir, filename)
 
 
     # creates the folder if it dosent't exist
@@ -69,5 +68,5 @@ def download_file(filename, subfolder=""):
 
 # Ingest main tour matches from 2000 onwards
 for year in range(2000, current_year + 1):
-    download_file(f"atp_matches_{year}.csv", "matches")
+    download_file(f"atp_matches_{year}.csv")
 
