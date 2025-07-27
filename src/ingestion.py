@@ -3,8 +3,6 @@
 import os
 import requests
 import pandas as pd
-from datetime import datetime
-
 
 # common starting part used to build full URL
 # by appending specific filenames or paths
@@ -26,7 +24,6 @@ os.makedirs(raw_data_dir, exist_ok=True)
 # get current year dynamicaly
 # current_year = datetime.now().year
 current_year=2024
-
 
 
 # downloads and saves csv based on category
@@ -70,20 +67,7 @@ def download_file(filename, subfolder=""):
         print(f"❌ Failed: {filename} — {e}")
 
 
-
-
-# Ingest main tour matches
-for year in range(1968, current_year + 1):
+# Ingest main tour matches from 2000 onwards
+for year in range(2000, current_year + 1):
     download_file(f"atp_matches_{year}.csv", "matches")
 
-# Ingest challenger/qualifiers matches
-for year in range(1991, current_year + 1):
-    download_file(f"atp_matches_qual_chall_{year}.csv", "qual_chall")
-
-# Ingest futures
-for year in range(1991, current_year + 1):
-    download_file(f"atp_matches_futures_{year}.csv", "futures")
-
-
-# Ingest player info (single files)
-download_file("atp_players.csv", "players")
