@@ -8,14 +8,11 @@ This project builds a data pipeline for tennis match data using open-source tool
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [How to Use](#how-to-use)
-- [Future Improvements](#future-improvements)
 
 
 ## 🧠 Project Overview
 
-This project builds a basic data pipeline for historical tennis match data from public datasets. The pipeline performs:
+This project builds a basic data pipeline for historical tennis match data from Jeff Sackmann's public datasets. The pipeline performs:
 - Data ingestion from GitHub
 - Cleaning and transformation
 - Storage in local CSV format
@@ -40,26 +37,25 @@ This project builds a basic data pipeline for historical tennis match data from 
 ## 📁 Project Structure
 
 ```
-
 tennis-data-engineering/
 ├── data/
+│ │
 │ ├── raw/ # Raw tennis match data (downloaded)
+│ │
 │ └── processed/ # Cleaned and transformed data
+│
 ├── notebooks/ # Jupyter notebooks for exploration
+│
 ├── src/
+│ │
 │ ├── ingestion.py # Downloads data from source
-│ ├── transformation.py # Cleans and formats data
-│ └── utils.py # Helper functions
+│ │
+│ └── transformation.py # Cleans and formats data
+│
 ├── .gitignore # Ignore untracked files
+│
 ├── README.md # Project overview
-├── requirements.txt # List of Python dependencies
+│
+├── matches_data_dictionary.txt # table column descriptions
 
 ```
-
-## 🚀 Getting Started
-
-
-## 🧪 How to Use
-
-
-## 🔮 Future Improvements
