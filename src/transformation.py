@@ -39,6 +39,8 @@ def clean_data(data):
     #parse dates
     data['tourney_date'] = pd.to_datetime(data['tourney_date'], format='%Y%m%d', errors='coerce')
 
+    #add year column
+    data['year'] = data['tourney_date'].dt.year
 
     #convert numeric columns
     numeric_cols = ['winner_rank', 'loser_rank', 'minutes', 'winner_age', 'loser_age', 'best_of']
